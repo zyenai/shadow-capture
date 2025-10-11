@@ -1,10 +1,9 @@
 # shadow-capture
-Enumerate, shadow, and screenshot RDP sessions on a local server. 
+Enumerate, shadow, and screenshot RDP sessions on a local server
 
 ## Features
 - Multi-threaded concurrent session capture
 - Automatic session filtering (skips own session and disconnected sessions)
-- Minimal forensic footprint
 
 ## Prerequisites
 - Windows Server 2019+ or Windows 10+
