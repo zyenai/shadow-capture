@@ -11,12 +11,22 @@ Enumerate, shadow, and screenshot RDP sessions on a local server
 - RDP shadowing enabled
 
 ## Usage
+Enable RDP shadowing
 ```cmd
-# Enable RDP shadowing
 reg.exe add "HKLM\Software\Policies\Microsoft\Windows NT\Terminal Services" /V Shadow /T REG_DWORD /D 2 /F
+```
 
-# Run the tool
-shadow-capture.exe C:\captures -t 5
+Run shadow-capture
+```cmd
+shadow-capture.exe [output_dir] [-t threads]
 
-# Disable RDP shadowing
+ARGUMENTS:
+  output_dir          Directory to save screenshots (default: current directory)
+  -t, --threads N     Number of concurrent captures (1-10, default: 3)
+  -h, --help          Show this help message
+```
+
+Disable RDP shadowing
+```cmd
 reg.exe delete "HKLM\Software\Policies\Microsoft\Windows NT\Terminal Services" /V Shadow
+```
