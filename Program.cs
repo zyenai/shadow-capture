@@ -250,6 +250,7 @@ namespace RDPShadowCapture
             Console.WriteLine();
             Console.WriteLine("MITRE ATT&CK:");
             Console.WriteLine("  T1021.001 - Remote Services: Remote Desktop Protocol");
+            Console.WriteLine("  T1563.002 - Remote Service Session Hijacking: RDP Hijacking");
             Console.WriteLine("  T1113     - Screen Capture");
             Console.WriteLine();
             Console.WriteLine("\"...each must possess some centre of power. Some locus. Call it what you will. Control that, and one controls the entire Realm!\"");
